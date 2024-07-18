@@ -1,0 +1,531 @@
+body {
+    color: #eee;
+    
+}
+
+.navbar {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    top: 0;
+    position: absolute;
+    z-index: 1000;
+    
+}
+
+.navbar nav ul {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    margin: 0;
+}
+
+.navbar nav ul li {
+    margin-left: 20px;
+}
+
+.navbar nav ul li a {
+    color: #fff; /* Ensure text color contrasts with background */
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+.navbar nav ul li a:hover {
+    color: #c691e6; /* Change color on hover */
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/stars.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-top: 60px; /* Ensure content is not hidden behind the navbar */
+}
+
+main .banner {
+    margin-top: 0; /* Remove margin-top to align content properly */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+}
+
+.banner button {
+    all: unset;
+    border: 1px solid #afaeae55;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-image: linear-gradient(
+        to bottom, #eee1, transparent, #eee1
+    );
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.banner button:hover {
+    background-color: #c691e6;
+    color: #040018;
+    box-shadow: 0 0 50px #c691e6;
+}
+
+h1 {
+    font-size: 9em;
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+    background-image: linear-gradient(
+        to left, #89a5df, #e46e7f, #e8e191
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    line-height: 1.1em;
+}
+
+.tagline {
+    font-size: 30px;
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+.subtag {
+    font-size: 20px;
+    font-weight: lighter;
+    text-align: left;
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+.banner {
+    position: relative;
+}
+
+.banner #dotsCanvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.button-container {
+    display: flex; /* Use flexbox to align buttons horizontally */
+    gap: 10px; /* Optional: space between buttons */
+}
+
+@keyframes slideinleft {
+    from{
+        transform: translatex(-690px)
+    }
+    
+}
+@keyframes slideinright{
+    from{
+        transform: translatex(690px)
+    }
+
+}
+@keyframes fadein {
+    from{
+        opacity:0;
+        transform: translatey(690px)
+    }
+    to{
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+
+
+
+.title{
+    
+    
+    font-size: 10em;
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+    background-image: linear-gradient(
+        to left, #000000, #461d89, #000d64, rgb(100, 22, 114) , rgb(0, 0, 0)
+    );
+  
+    text-transform: uppercase;
+    line-height: 1.1em;
+}
+
+.title.reveal {
+    color: transparent; /* Set final color after animation */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Apply after */
+}
+
+.t1{
+    animation-name: slideinleft;
+    animation-duration:2s;}
+    
+.t2{animation-name: slideinleft;
+    animation-duration:2.2s;}
+.t3{animation-name: slideinleft;
+    animation-duration:2.4s;}
+.t4{animation-name: slideinleft;
+    animation-duration:2.6s;}
+.t5{animation-name: slideinleft;
+    animation-duration:2.8s;}
+
+
+.section3{
+
+    background-image: url(images/vimal-s-cPGMrfAuUSg-unsplash.jpg);
+    background-size: cover;
+
+}
+.titlebox{
+    font-size: 5em;
+    text-align: center;
+    
+}
+
+.sticky-section {
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2em;
+    position: sticky;
+    /* Ensures it stays above other content */
+}
+
+.section1 {
+    background-image:  linear-gradient(rgba(24, 23, 23, 0.5),rgba(0,0,0,0.5)),url('images/vimal-s-cPGMrfAuUSg-unsplash.jpg'); /* Replace with your image URL */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the image */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.aboutus{
+    text-align: left;
+    position: sticky;
+    animation-name: fadein;
+    animation-duration: 2s;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+}
+.section4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 1),rgba(0,0,0,0.5)),url('images/5172658.jpg'); /* Replace with your image URL */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the image */
+    position: sticky;
+    text-align: right;
+}
+.section5{
+
+    background-image: linear-gradient(rgba(0, 0, 0, 1),rgba(0,0,0,0.8)),url(images/5172658.jpg);
+    background-size: cover;
+    position: sticky;
+
+}
+.section6 {
+    background-image: linear-gradient(rgba(0, 0, 0, 1),rgba(0,0,0,0.8)),url('images/6402727_3281395.jpg'); /* Replace with your image URL */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the image */
+}
+.section7{
+
+    background-image: linear-gradient(rgba(0, 0, 0, 1),rgba(0,0,0,0.8)),url('images/6402727_3281395.jpg');
+    background-size: cover;
+
+}
+.section8 {
+    background-image: linear-gradient(rgba(0, 0, 0, 1),rgba(0,0,0,0.8)),url('images/18309206_SL-043021-42650-08.jpg'); /* Replace with your image URL */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the image */
+    text-align: right;
+}
+.section9{
+
+    background-image: linear-gradient(rgba(0, 0, 0, 1),rgba(0,0,0,0.8)),url('images/18309206_SL-043021-42650-08.jpg');
+    background-size: cover;
+
+}
+.section10 {
+    background-image: linear-gradient(rgba(0, 0, 0, 1),rgba(0,0,0,0.8)),url('images/vimal-s-cPGMrfAuUSg-unsplash.jpg'); /* Replace with your image URL */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the image */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+}
+.section11{
+
+    background-image: linear-gradient(rgba(0, 0, 0, 1),rgba(0,0,0,0.8)),url('images/vimal-s-cPGMrfAuUSg-unsplash.jpg');
+    background-size: cover;
+    
+
+}
+.image1{
+    background-image: url(images/downloadedImage.png);
+    width: 30%;
+    height: 60%;
+    right: 0px;
+    border-radius: 20px;
+    margin-right: 70px;
+    left: 100%;
+    animation-name: slideinright;
+    animation-duration: 2s;
+    box-shadow: 15px 15px 15px 20px rgba(0.5, 0.5, 0.5, 0.5);
+
+}
+.image2{
+    background-image: url(images/Bitcoin.jpg);
+    width: 100%;
+    height: 70%;
+    left: 0px;
+    border-radius: 20px;
+    margin-left: 70px;
+    animation-name: slideinleft;
+    animation-duration:2s;
+}
+.ourmission{
+    margin-right: 70px;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    animation-name: fadein;
+    animation-duration: 2s;
+}
+.aboutus{
+    padding: 130px;
+}
+.image3{
+    background-image: url(images/WhatsApp\ Image\ 2024-07-16\ at\ 18.32.35_228ab556.jpg);
+    width: 100%;
+    height: 60%;
+    right: 0px;
+    border-radius: 20px;
+    margin-right: 70px;
+}
+.whoweare{
+    margin-left: 50px;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    animation-name: fadein;
+    animation-duration: 2s;
+}
+.image4{
+    background-image: url(images/poor.jpeg) ;
+    width: 100%;
+    height: 70%;
+    left: 0px;
+    border-radius: 20px;
+    margin-left: 90px;
+    animation-name: slideinleft;
+    animation-duration:2s;
+}
+.whychooseus{
+    margin-right: 70px;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    animation-name: fadein;
+    animation-duration: 2s;
+}
+.image5{
+    background-image: url(images/NGO.jpg);
+    width: 60%;
+    height: 50.5%;
+    animation-name: fadein;
+    animation-duration: 2s;
+    padding: 20px 40px;
+    border-radius: 2em;
+}
+
+.aboutushead{
+    color: rgb(0, 255, 195);
+    font-weight: bolder;
+    font-size: 70px;
+}
+.whychooseushead{
+    color: rgb(0, 255, 195);
+    font-weight: bolder;
+    font-size: 70px;
+    
+}
+.whowearehead{
+    color: rgb(0, 255, 195);
+    font-weight: bolder;
+    font-size: 70px;
+}
+.aboutushead{
+    color: rgb(0, 255, 195);
+    font-weight: bolder;
+    font-size: 70px;
+}
+.ourmissionhead{
+    color: rgb(0, 255, 195);
+    font-weight: bolder;
+    font-size: 70px;
+}
+.communityfocussedhead{
+    color: rgb(0, 255, 195);
+    font-weight: bolder;
+    font-size: 70px;
+
+}
+.communityfocussed{
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    animation-name: fadein;
+    animation-duration: 2s;
+}
+
+.bodyfooter{
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    background: #333;
+}
+
+footer * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul {
+list-style: none;
+}
+
+footer {
+    color: #fff;
+    background: #121315;
+
+}
+
+footer p{
+    color: #ccc;
+    max-width: 25em;
+    font-size: 0.9em;
+    line-height: 23px;
+}
+
+footer a{
+    color: #fff;
+    text-decoration: none;
+}
+
+footer h4 {
+    margin-bottom: 1em;
+    text-transform: uppercase;
+
+}
+
+footer .container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.footer1 {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 1),rgba(0,0,0,0.8)), url(depicting-3d-cartoon-symbol-of-blockchain-link-the-internet-technology-chain-security-business-network-concept-and-illustration_9784842.jpg!w700wp) no-repeat center;
+    background-size: cover;
+
+}
+
+.footer1 ::before {
+    content: '';
+    background: rgba(0,0,0,0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    height :100%;
+    z-index: 0;
+
+}
+
+.footer1.container{
+    position: relative;
+
+}
+
+.footer1 .footer-top .container,
+.footer1 .col2,
+.footer .footer-bottom .container,
+.footer2 .container,
+.footer3 .container{
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+}
+
+.footer1 .footer-bottom .container{
+    padding: 1em 2em;
+    align-items: center;
+
+}
+
+.footer1 .menu li {
+    margin-bottom: 0.6em;
+}
+
+.footer1 .menu a:hover{
+    text-decoration: underline;
+
+}
+
+.brand{
+    display: block;
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 1em;
+
+}
+
+.media-icons li{
+    display: inline-block;
+    margin: 0.5em 0.5em 0.5em 0;
+
+}
+
+.media-icons a {
+    font-size: 1.1em;
+    width: 2em;
+    height: 2em;
+    border: 1px #fff solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.media-icons a:hover {
+    background: #fff;
+    color:  #111;
+
+}
+
+.footer-bottom{
+    border-top: 1px #dbdbdb solid;
+}
